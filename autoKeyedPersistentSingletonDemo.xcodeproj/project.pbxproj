@@ -15,6 +15,7 @@
 		836915B519DF32BC006CE9E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836915B419DF32BC006CE9E7 /* Images.xcassets */; };
 		836915B819DF32BC006CE9E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836915B619DF32BC006CE9E7 /* LaunchScreen.xib */; };
 		836915C419DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836915C319DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemoTests.m */; };
+		836915CF19DF32F0006CE9E7 /* AKPSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 836915CD19DF32F0006CE9E7 /* AKPSObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		836915BD19DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autoKeyedPersistentSingletonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836915C219DF32BC006CE9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836915C319DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoKeyedPersistentSingletonDemoTests.m; sourceTree = "<group>"; };
+		836915CD19DF32F0006CE9E7 /* AKPSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKPSObject.m; sourceTree = "<group>"; };
+		836915CE19DF32F0006CE9E7 /* AKPSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKPSObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				836915A919DF32BC006CE9E7 /* AppDelegate.m */,
 				836915AE19DF32BC006CE9E7 /* ViewController.h */,
 				836915AF19DF32BC006CE9E7 /* ViewController.m */,
+				836915D019DF3305006CE9E7 /* AKPSObject */,
 				836915B119DF32BC006CE9E7 /* Main.storyboard */,
 				836915B419DF32BC006CE9E7 /* Images.xcassets */,
 				836915B619DF32BC006CE9E7 /* LaunchScreen.xib */,
@@ -120,6 +124,15 @@
 				836915C219DF32BC006CE9E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		836915D019DF3305006CE9E7 /* AKPSObject */ = {
+			isa = PBXGroup;
+			children = (
+				836915CD19DF32F0006CE9E7 /* AKPSObject.m */,
+				836915CE19DF32F0006CE9E7 /* AKPSObject.h */,
+			);
+			name = AKPSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836915CF19DF32F0006CE9E7 /* AKPSObject.m in Sources */,
 				836915AD19DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemo.xcdatamodeld in Sources */,
 				836915AA19DF32BC006CE9E7 /* AppDelegate.m in Sources */,
 				836915B019DF32BC006CE9E7 /* ViewController.m in Sources */,
