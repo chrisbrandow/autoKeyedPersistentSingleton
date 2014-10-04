@@ -67,7 +67,7 @@
 }
 
 + (NSArray *)propertyKeys {
-    return [NSArray arrayWithArray:[[self class] keysFromProperties]];
+    return [[self class] keysFromProperties];
 }
 
 #pragma mark persistence
