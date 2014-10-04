@@ -103,7 +103,7 @@
     NSMutableArray* propertyArray = [NSMutableArray arrayWithCapacity:count];
     
     for (int i = 0; i < count ; i++) {
-        [propertyArray addObject:[NSString  stringWithCString:property_getName(properties[i]) encoding:NSUTF8StringEncoding]];
+        [propertyArray addObject:@(property_getName(properties[i]))];
     }
     free(properties);
     

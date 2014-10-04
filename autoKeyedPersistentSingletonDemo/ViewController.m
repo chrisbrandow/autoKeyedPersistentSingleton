@@ -28,6 +28,10 @@
     
     NSLog(@"array: %@", thisInstance.testArray);
     thisInstance.testArray = @[@"one", @"two", @"three"];
+
+    
+    NSLog(@" intere %@, hodin %@", interiorArray, holdingArray);
+    
     if (thisInstance.thisColor) {
         self.label.backgroundColor = thisInstance.thisColor;
     }
@@ -76,8 +80,6 @@
 
     [self.toggleButton setTitle:buttonTitle forState:UIControlStateNormal];
 
-    
-    
     [thisInstance save];
     NSLog(@"color after press: %@", thisInstance.thisColor);
 }
