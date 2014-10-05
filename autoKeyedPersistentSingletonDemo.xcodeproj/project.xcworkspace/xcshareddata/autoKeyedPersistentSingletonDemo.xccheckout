@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B3B7018E-D7EF-414B-B271-0B0BA06DB96C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>autoKeyedPersistentSingletonDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C81B83D6BEA81FAEBD49E85FEFA6F587E7E2FD5B</key>
+		<string>https://github.com/chrisbrandow/autoKeyedPersistentSingleton.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>autoKeyedPersistentSingletonDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C81B83D6BEA81FAEBD49E85FEFA6F587E7E2FD5B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chrisbrandow/autoKeyedPersistentSingleton.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C81B83D6BEA81FAEBD49E85FEFA6F587E7E2FD5B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C81B83D6BEA81FAEBD49E85FEFA6F587E7E2FD5B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>autoKeyedPersistentSingletonDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
