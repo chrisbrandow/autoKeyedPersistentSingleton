@@ -30,7 +30,7 @@
     //second log.
     
     thisInstance.testArray = @[@"one", @"two", @"three"];
-
+    thisInstance.anotherPropertyName = 5.4;
     [self setupUI];
 }
 

@@ -32,7 +32,7 @@
 //@property (nonatomic) NSNumber *numberProperty;
 //@property (nonatomic) double double_Property;
 //@property (nonatomic) NSInteger randomPropertyName;
-//@property (nonatomic) float anotherPropertyName;
+@property (nonatomic) float anotherPropertyName;
 
 @property (nonatomic) NSArray *testArray;
 @property (nonatomic) UIColor *thisColor;
