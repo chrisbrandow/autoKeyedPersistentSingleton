@@ -16,32 +16,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This label displays the stored background color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7d-MI-HPk">
-                                <rect key="frame" x="-8" y="96" width="363" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Currently In  Memory in Singleton" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7d-MI-HPk">
+                                <rect key="frame" x="202" y="36" width="197" height="60"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.27450980390000002" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="iJW-jj-np4"/>
+                                    <constraint firstAttribute="height" constant="60" id="uaA-t3-nTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-PG-w2I">
-                                <rect key="frame" x="20" y="226" width="306" height="30"/>
-                                <state key="normal" title="stored color is currently blue, press to toggle">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Currently Persisted  in KeyedArchive" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A79-OO-3UI">
+                                <rect key="frame" x="205" y="141" width="197" height="60"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.27450980390000002" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="8cF-ag-w52"/>
+                                    <constraint firstAttribute="height" constant="60" id="Gdj-Cq-MUZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-Rc-tZk">
+                                <rect key="frame" x="209" y="313" width="188" height="33"/>
+                                <color key="backgroundColor" red="0.30063387749999998" green="0.51946395639999998" blue="0.4756973088" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="TNo-7m-ZRH"/>
+                                    <constraint firstAttribute="width" constant="188" id="ZQr-CL-jBm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Persist Object (&quot;save&quot;)">
+                                    <color key="titleColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d7J-dC-jPr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-PG-w2I">
+                                <rect key="frame" x="178" y="254" width="245" height="33"/>
+                                <color key="backgroundColor" red="0.30063387751579285" green="0.51946395635604858" blue="0.47569730877876282" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="Yuj-qD-l9O"/>
+                                    <constraint firstAttribute="height" constant="33" id="zXW-X2-bfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Toggle Object's Color Property">
+                                    <color key="titleColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="changeButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="whP-3c-IOn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="stored color will display on relaunch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A79-OO-3UI">
-                                <rect key="frame" x="36" y="184" width="275" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iSV-Rc-tZk" firstAttribute="top" secondItem="XVM-PG-w2I" secondAttribute="bottom" constant="26" id="Fbz-Qf-wcl"/>
+                            <constraint firstAttribute="centerX" secondItem="XVM-PG-w2I" secondAttribute="centerX" id="JEv-dx-FA9"/>
+                            <constraint firstAttribute="centerX" secondItem="A79-OO-3UI" secondAttribute="centerX" constant="-3" id="Kah-T2-mO8"/>
+                            <constraint firstItem="E7d-MI-HPk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="Vc8-OX-YCD"/>
+                            <constraint firstItem="XVM-PG-w2I" firstAttribute="top" secondItem="A79-OO-3UI" secondAttribute="bottom" constant="53" id="Yqs-pK-FB7"/>
+                            <constraint firstAttribute="centerX" secondItem="E7d-MI-HPk" secondAttribute="centerX" id="eKn-aa-ayA"/>
+                            <constraint firstItem="A79-OO-3UI" firstAttribute="top" secondItem="E7d-MI-HPk" secondAttribute="bottom" constant="45" id="pW1-on-Iw2"/>
+                            <constraint firstAttribute="centerX" secondItem="iSV-Rc-tZk" secondAttribute="centerX" constant="-3" id="xg3-Rk-Bhx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="E7d-MI-HPk" id="yW3-qW-dLm"/>
+                        <outlet property="saveButton" destination="iSV-Rc-tZk" id="wBM-0b-UhK"/>
+                        <outlet property="storageLabel" destination="A79-OO-3UI" id="h3z-h1-ImL"/>
                         <outlet property="toggleButton" destination="XVM-PG-w2I" id="kk1-Db-sSw"/>
                     </connections>
                 </viewController>

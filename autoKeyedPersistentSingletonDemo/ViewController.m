@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import "AKPSObject.h"
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *storageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *toggleButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
 @end
 
@@ -26,62 +29,51 @@
     //if you change thisInstance.testArray belowthen the initial log will be different from the
     //second log.
     
-    NSLog(@"array: %@", thisInstance.testArray);
     thisInstance.testArray = @[@"one", @"two", @"three"];
 
-    
-    NSLog(@" intere %@, hodin %@", interiorArray, holdingArray);
-    
-    if (thisInstance.thisColor) {
-        self.label.backgroundColor = thisInstance.thisColor;
-    }
-
-    NSLog(@"array: %@", thisInstance.testArray);
-    [thisInstance save];
-    
-    NSString *buttonTitle;
-    if ([thisInstance.thisColor isEqual:[UIColor blueColor]]) {
-        
-        buttonTitle = [NSString stringWithFormat:@"stored color is currently %@", @"blue" ];
-        
-    } else {
-        buttonTitle = [NSString stringWithFormat:@"stored color is currently %@", @"orange" ];
-        
-    }
-    
-    [self.toggleButton setTitle:buttonTitle forState:UIControlStateNormal];
-    
+    [self setupUI];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)changeButtonAction:(id)sender {
+
+- (IBAction)saveAction:(id)sender {
+    
     AKPSObject *thisInstance = [AKPSObject sharedInstance];
     
-    NSString *buttonTitle = @"";
-    NSLog(@"color after press: %@", thisInstance.thisColor);
-
-
-    if ([thisInstance.thisColor isEqual:[UIColor blueColor]]) {
-        
-        thisInstance.thisColor = [UIColor orangeColor];
-        buttonTitle = [NSString stringWithFormat:@"stored color is now %@", @"orange" ];
-        NSLog(@"found blue");
-        
-        
-    } else {
-        thisInstance.thisColor = [UIColor blueColor];
-        buttonTitle = [NSString stringWithFormat:@"stored color is now %@", @"blue" ];
-        NSLog(@"found orange %@", buttonTitle);
-
-    }
-
-    [self.toggleButton setTitle:buttonTitle forState:UIControlStateNormal];
-
     [thisInstance save];
-    NSLog(@"color after press: %@", thisInstance.thisColor);
+    
+    self.storageLabel.backgroundColor = thisInstance.thisColor;
+
+
 }
+- (IBAction)changeButtonAction:(id)sender {
+    
+    AKPSObject *thisInstance = [AKPSObject sharedInstance];
+    
+    thisInstance.thisColor = ([thisInstance.thisColor isEqual:[UIColor blueColor]]) ? [UIColor orangeColor] :  [UIColor blueColor];
+
+    self.label.backgroundColor = thisInstance.thisColor;
+
+}
+
+- (void)setupUI {
+    
+    AKPSObject *thisInstance = [AKPSObject sharedInstance];
+
+    NSArray *views = @[self.toggleButton, self.saveButton, self.label, self.storageLabel];
+    
+    for (UIView *v  in views) {
+        v.layer.cornerRadius = v.frame.size.height/2;
+        v.layer.masksToBounds = YES;
+    }
+    
+    self.label.backgroundColor = thisInstance.thisColor;
+    self.storageLabel.backgroundColor = thisInstance.thisColor;
+    
+}
+
 
 @end
