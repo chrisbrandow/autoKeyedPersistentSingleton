@@ -48,7 +48,6 @@
     
     for (NSString *key in [[self class] keysFromProperties]) {
     
-        //should probably be [aDecoder containsValueForKey:key]
         if ([aDecoder containsValueForKey:key]) {
             [self setValue:[aDecoder decodeObjectForKey:key] forKey:key];
         }
