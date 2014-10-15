@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8347E7EF19EE6416008569F7 /* EnumObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347E7EE19EE6416008569F7 /* EnumObject.m */; };
 		836915A719DF32BC006CE9E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836915A619DF32BC006CE9E7 /* main.m */; };
 		836915AA19DF32BC006CE9E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836915A919DF32BC006CE9E7 /* AppDelegate.m */; };
 		836915AD19DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836915AB19DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemo.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8347E7ED19EE6416008569F7 /* EnumObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumObject.h; sourceTree = "<group>"; };
+		8347E7EE19EE6416008569F7 /* EnumObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumObject.m; sourceTree = "<group>"; };
 		836915A119DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoKeyedPersistentSingletonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836915A519DF32BC006CE9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836915A619DF32BC006CE9E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 			children = (
 				836915CD19DF32F0006CE9E7 /* AKPSObject.m */,
 				836915CE19DF32F0006CE9E7 /* AKPSObject.h */,
+				8347E7ED19EE6416008569F7 /* EnumObject.h */,
+				8347E7EE19EE6416008569F7 /* EnumObject.m */,
 			);
 			name = AKPSObject;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836915CF19DF32F0006CE9E7 /* AKPSObject.m in Sources */,
+				8347E7EF19EE6416008569F7 /* EnumObject.m in Sources */,
 				836915AD19DF32BC006CE9E7 /* autoKeyedPersistentSingletonDemo.xcdatamodeld in Sources */,
 				836915AA19DF32BC006CE9E7 /* AppDelegate.m in Sources */,
 				836915B019DF32BC006CE9E7 /* ViewController.m in Sources */,
@@ -430,6 +436,7 @@
 				836915C919DF32BC006CE9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836915CA19DF32BC006CE9E7 /* Build configuration list for PBXNativeTarget "autoKeyedPersistentSingletonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				836915CC19DF32BC006CE9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

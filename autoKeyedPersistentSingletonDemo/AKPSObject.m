@@ -11,7 +11,7 @@
 
 @implementation AKPSObject
 
-+ (AKPSObject *)sharedInstance {
++ (instancetype)sharedInstance {
     static dispatch_once_t  onceToken;
     static AKPSObject * sSharedInstance;
     

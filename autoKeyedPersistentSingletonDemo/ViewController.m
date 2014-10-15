@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AKPSObject.h"
+#import "EnumObject.h"
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -24,6 +25,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     AKPSObject *thisInstance = [AKPSObject sharedInstance];
+    EnumObject *enumeratedInstance = [EnumObject sharedInstance];
+    
+    NSLog(@"1st prop instance %zd", enumeratedInstance.firstEnumProperty);
+    NSLog(@"2nd prop instance %zd", enumeratedInstance.secondEnumProperty);
+    NSLog(@"3rd prop instance %zd", enumeratedInstance.thirdEnumProperty);
     
     //first time you run app, thisInstance.testArray should be nil
     //if you change thisInstance.testArray belowthen the initial log will be different from the
